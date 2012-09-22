@@ -9,10 +9,6 @@ class Anagrammer
 
   include Algorithms::Progressive
 
-  def initialize
-    @anagrams = {}
-  end
-
   def start
     calculate
     show_results
