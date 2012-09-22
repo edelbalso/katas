@@ -1,9 +1,6 @@
 barrette berretta
-11002000000000000202000000
-
 barrettes berrettas
 barye yerba
-11001000000000000100000010
 baryes yerbas
 baryte betray
 barytes betrays
@@ -15,7 +12,6 @@ base sabe
 baseliners bleariness
 basely belays
 bases sabes
-
 basher rehabs
 bashers brashes
 basinets bassinet
@@ -23,7 +19,6 @@ basins sabins
 basion bonsai
 bask kabs
 basketfuls basketsful
-
 basketwork workbasket
 basketworks workbaskets
 bass sabs
@@ -31,7 +26,6 @@ basseted besteads
 basseting beastings
 basters breasts
 bastille listable
-
 bastioned botanised
 basts stabs
 bat tab
@@ -226,7 +220,6 @@ birdseed debrides
 birdsong songbird
 birdsongs songbirds
 birks brisk
-
 admonisher harmonised rhodamines
 adopters pastored readopts
 adore oared oread
