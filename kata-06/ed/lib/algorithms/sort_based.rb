@@ -7,9 +7,7 @@ module Algorithms
       Dictionary.each_word do |word|
         insert_into_index word
       end
-      #@size_index.each do |s,ws|
-      #  find_anagrams ws
-      #end
+
     end
 
 
