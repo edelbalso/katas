@@ -1,0 +1,149 @@
+how to analyze an anagram
+
+example words:
+  kinship pinkish
+  enlist inlets listen silent
+  boaster boaters borates
+  fresher refresh
+  sinks skins
+  knits stink
+  rots sort
+
+Input Dictionary into a hash
+output how many and what anagrams exist
+each letter has a point a-1, b-2, c-3
+->not granular enough
+
+
+Better point system vowels are a-1,e-2,i-3,o-4,u-5
+The rest of the alphabet assign points to letters
+capture the length of the word
+
+iterate through the dictionary and store the word and the total # of points for a word
+iterate through the hash and try to find entries with the same total
+store the results in another hash of words with the same totals
+
+Example:
+a-1
+b-6
+c-7
+d-8
+e-2
+f-9
+g-10
+h-11
+i-3
+j-12
+k-13
+l-14
+m-15
+n-16
+o-4
+p-17
+q-18
+r-19
+s-20
+t-21
+u-5
+v-22
+w-23
+x-24
+y-25
+z-26
+
+kinship-> 13+3+16+20+11+3+17=83, length of the word=7
+pinkish-> 17+3+16+13+3+20+11=83, length of the word=7
+
+read a solution - use prime numbers - sounds cool and unique
+
+Example
+
+full_list = { 
+     "kinship",
+     "pinkish",
+     "enlist", 
+     "inlets",
+     "listen",
+     "silent",
+     "boaster",
+     "boaters",
+     "borates",
+     "fresher",
+     "refresh",
+     "sinks",
+     "skins",
+     "knits",
+     "stink",
+     "rots",
+     "sort"
+         }
+
+scoring_system = {
+"a" =>2,
+"b" =>3,
+"c" =>5,
+"d" =>7,
+"e" =>11,
+"f" =>13,
+"g" =>17,
+"h" =>19,
+"i" =>23,
+"j" =>29,
+"k" =>31,
+"l" =>37,
+"m" =>41,
+"n" =>43,
+"o" =>47,
+"p" =>53,
+"q" =>59,
+"r" =>61,
+"s" =>67,
+"t" =>71,
+"u" =>73,
+"v" =>79,
+"w" =>83,
+"x" =>89,
+"y" =>97,
+"z" =>101
+}
+
+
+#def readfile()
+#  full_list = Hash.new(0)
+#  file = FasterCSV.read(FILEofWORDS)[1..-1].each { |row| full_list[row[0]] += 1 }
+# return full_list
+#end
+
+def analyzefile(full_list)
+  combined = {}
+  #Read the word from the hash, calculate the score and length and attach it onto the word
+  full_list.each do|word|
+    # Ed says that this valuable score is just being created because of a misnamed(understood) hash, I should be aggregating the score to the variable not a hash
+    score=0;  
+    word.each do |l|
+      score+=score_system[l]
+    end
+    combined[word] = score
+    combined.each do |compare_word, compare_score|
+      if score==compare_score
+        #must have a way to store the anagrams in their own list  
+    end
+  end
+end
+
+#def find_anagrams(combined)
+# n=1;
+ #iterate through each word comparing the score and length to all the others if there's a match add to the anagram list 
+# combined.each do |word, score|
+# for 
+#combined+n.each do |word, score|
+#   if score = score
+#    anagram_words = "#{word},"
+#  n+=1
+#  end
+# anagram_words = "\n"
+# end
+# anagram_words do |word|
+# print "{#word}"
+#end
+
