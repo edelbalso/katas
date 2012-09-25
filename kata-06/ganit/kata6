@@ -126,7 +126,8 @@ def analyzefile(full_list)
     combined[word] = score
     combined.each do |compare_word, compare_score|
       if score==compare_score
-        #must have a way to store the anagrams in their own list  
+        #Must have a way to store the anagrams in their own list  
+        #Different hashes for different scores
     end
   end
 end
